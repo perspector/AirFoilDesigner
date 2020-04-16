@@ -1,4 +1,4 @@
-# AirFoilSimulator
+# AirFoilDesigner
 A simple, open source airfoil simulator created with Python and Pygame.
 It is (I think, currently, the only airfoil simulator created with Pygame.)
 The requirements.txt file should install all dependencies, including Pygame and Python
