@@ -1,14 +1,22 @@
 """
-Made with a Raspberry Pi 3B+, screenshots may malfunction on other devices. You should have Python 3.7 or higher installed, and you must have Pygame.
+Created by Benny Chase
+Made with a Raspberry Pi 3B+, screenshots may malfunction on other devices. You should have Python 3.5 or higher installed, and you must have Pygame.
 """
 # Imports
-import pygame, sys, os
+import pygame, sys, os, time
 from pygame.locals import *
 
 # Initiate everything
 pygame.init()
 
-DISPLAYSURF = pygame.display.set_mode((1280, 960))
+winWidth = 960
+winHeight = 720
+
+halfWinWidth = winWidth / 2
+halfWinHeight = winHeight / 2
+
+
+DISPLAYSURF = pygame.display.set_mode((winWidth, winHeight))
 pygame.display.set_caption('Airfoil Model, press SPACE to take a picture')
 
 # Set colors
@@ -35,9 +43,23 @@ if chord == "x":
 else:
     chordValue = chord
 
+if points == "x":
+    pointsValue = 100
+else:
+    pointsValue = points
+
+COORDINATES = []
+
+CENTER = halfWinWidth, halfWinHeight
+
 QuarterChord = float(chordValue) / 4
 
-pygame.draw.polygon(DISPLAYSURF, AIRFOILCOLOR, ((1, 1), (1000, 1000), (200, 5), (90, 500)))
+for i in range(0, int(pointsValue) - 1):
+    pass
+
+COORDINATES = (50, halfWinHeight), (200, 600), (900, 600)
+
+pygame.draw.polygon(DISPLAYSURF, AIRFOILCOLOR, (COORDINATES))
 
 # Forever
 while True:
@@ -46,8 +68,7 @@ while True:
         if event.type == KEYDOWN:
             if event.key == K_SPACE:
                 # Captures Screenshot when space is pressed, works on Raspberry Pi 3B+
-                nameOfScreenshot = input("What would you like to name the screenshot file?('.png' must be included.): ")
-                os.system("scrot " + nameOfScreenshot)
+                os.system("scrot")
                 print("Screenshot Captured!")
         # Exits when you press the 'X'
         elif event.type == QUIT:
