@@ -3,7 +3,7 @@ Created by Benny Chase
 Made with a Raspberry Pi 3B+, screenshots may malfunction on other devices.
 Screenshot should go to the folder the program is in.
 You should have Python 3.5 or higher installed, and you must have Pygame.
-I have set up my Github Repository so that it should install Python and Pygame.
+I have included links to the python and pygame websites so you can download it there.
 If you experience any issues, bugs or you want to contribute, please post all
 bugs in the 'issues' section of my repository. If you want to contribute, please
 do! You are welcome to contribute by making yourself a contributer, or contact
