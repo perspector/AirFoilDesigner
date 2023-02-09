@@ -7,7 +7,7 @@ I have included links to the python and pygame websites so you can download it t
 If you experience any issues, bugs or you want to contribute, please post all
 bugs in the 'issues' section of my repository. If you want to contribute, please
 do! You are welcome to contribute by making yourself a contributer, or contact
-me through Github (BennyThePythonCoder). This airfoil designer and simulator is
+me through Github (perspector). This airfoil designer and simulator is
 designed for beginners so they can get a basic understanding of airfoil.
 Licensed under an MIT license, for more info, please look at the "LICENSE" file.
 """
