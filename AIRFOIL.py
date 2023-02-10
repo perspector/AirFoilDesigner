@@ -1,5 +1,5 @@
 """
-Created by Benny Chase
+Created by Benjamin Chase
 Made with a Raspberry Pi 3B+, screenshots may malfunction on other devices.
 Screenshot should go to the folder the program is in.
 You should have Python 3.5 or higher installed, and you must have Pygame.
